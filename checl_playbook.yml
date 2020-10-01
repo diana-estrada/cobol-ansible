@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  roles: 
+    - check-cobol
+    - check-cucumber
+    - sonar-check
+     
+     

@@ -1,0 +1,9 @@
+- name: Revisa que la url de sonar este funcionando
+  uri:
+    url: "https://sonarcloud.io/dashboard?id=helozano_cobol-calculator"
+    follow_redirects: none
+    method: GET
+  register: _result
+  until: _result.status == 200
+  retries: 720
+  delay: 5

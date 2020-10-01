@@ -3,6 +3,7 @@
   roles: 
     - check-cobol
     - check-cucumber
+    - check-java
     - sonar-check
      
      

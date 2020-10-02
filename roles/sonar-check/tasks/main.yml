@@ -16,7 +16,7 @@
       Accept: 'application/json'
     validate_certs: yes
     follow_redirects: all
-    return_content: yes
+    return_content: no
     status_code: 200
     method: GET
   register: get_nodes_out

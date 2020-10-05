@@ -20,4 +20,5 @@
     status_code: 200
     method: GET
   register: get_nodes_out
+  failed_when: "'FAILED' in get_nodes_out"
 - debug: var=get_nodes_out
